@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:id="@+id/llDiscPostLayout"
+
+    android:layout_marginBottom="16dp"
+    android:layout_height="175dp"
+    android:background="@drawable/post_background"
+    android:minHeight="175dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llDiscPostLayout2"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/postDiscText"
+            android:text="post text goes here"
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_margin="16dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/listviewDiscPostType"
+            android:text="P"
+            android:background="#EC7568"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:layout_weight=".1"
+            android:layout_margin="16dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/llDiscPostLayout2"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:orientation="horizontal"
+        android:id="@+id/llDiscPostLayout3"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:id="@+id/textDiscStakePoints"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="points"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginRight="35dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:id="@+id/textDiscCommentCount"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="comments"
+            android:id="@+id/textDiscCommentsVary"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/firstDiscDivider"
+        android:layout_below="@+id/llDiscPostLayout3"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:layout_width="fill_parent"
+        android:background="@android:color/darker_gray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_below="@id/firstDiscDivider"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/rl1Disc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:id="@+id/imageDiscCoins"
+                android:background="@drawable/coins"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/imageDiscCoins"
+                android:text="Stake"
+                android:id="@+id/textDiscStake"
+                android:layout_alignBottom="@+id/imageDiscCoins"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/rl2Disc"
+            android:layout_toRightOf="@+id/rl1Disc"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="30dp"
+                android:id="@+id/imageDiscComments"
+                android:background="@drawable/comments"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/imageDiscComments"
+                android:text="Comment"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBottom="@+id/imageDiscComments"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/rl2Disc"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="25dp"
+                android:id="@+id/imageDiscFlag"
+                android:background="@drawable/flag_grey_unfilled"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/imageDiscFlag"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBottom="@+id/imageDiscFlag"
+                android:text="10"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.gokul.favr_v2.ThoughtPostDetailsActivity">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical"
+        android:id="@+id/llone"
+        android:background="@drawable/post_details_background"
+        android:minHeight="150dp"
+        android:layout_height="wrap_content">
+        <TextView android:text="@string/hello_world"
+            android:id="@+id/textThoughtPostDetails"
+            android:padding="20dp"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listThoughtComments"
+        android:layout_below="@+id/llone"
+        android:layout_height="wrap_content">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/add_comment_background"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight=".8"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:hint="Post a comment..."
+            android:id="@+id/textAddComment"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/add_comment_edittext_background"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="37dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginEnd="6dp"
+
+            android:id="@+id/btnAddComment"
+            android:background="@drawable/sent_50"
+            android:layout_height="37dp" />
+    </LinearLayout>
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStakeIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_icon="@drawable/plus_500"
+        fab:fab_colorNormal="@color/ColorAccent"
+        fab:fab_colorPressed="@color/ColorAccent"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp">
+
+
+    </com.getbase.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:layout_width="0dp"
+        android:hint="Enter a bid option here..."
+        android:paddingLeft="5dp"
+        android:textSize="15sp"
+        android:id="@+id/editTextOption"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="5dp"
+        android:layout_weight=".8"
+        android:layout_marginRight="2.5dp"
+        android:layout_height="50dp"/>
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:id="@+id/btnDeleteOption"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/eidt_32"
+        android:background="@drawable/image_button"
+        android:layout_height="50dp"
+
+        android:contentDescription="@null" />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_marginLeft="2.5dp"
+        android:id="@+id/btnEditOption"
+        android:background="@drawable/image_button"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/delete_32"
+        android:contentDescription="@null" />
+
+</LinearLayout>

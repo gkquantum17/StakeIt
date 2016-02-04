@@ -1,0 +1,112 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.gokul.favr_v2.InfoActivity"
+    >
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tool_bar"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:id="@+id/llGender"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="MALE"
+            android:id="@+id/textMale"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:text="FEMALE"
+            android:id="@+id/textFemale"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/llSpinner"
+
+        android:layout_below="@+id/llGender"
+        android:layout_height="wrap_content">
+      <Button
+          android:layout_width="0dp"
+          android:layout_weight=".75"
+          android:layout_marginRight="5dp"
+          android:layout_height="wrap_content"
+          android:background="@color/ColorPrimary"
+          android:id="@+id/btnBday"
+          android:textColor="@android:color/white"
+          android:text="Select Birthday"/>
+      <EditText
+          android:gravity="center_horizontal"
+          android:layout_weight="1"
+          android:id="@+id/editBday"
+          android:textColor="@color/abc_primary_text_material_light"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:hint="MM/DD/YYYY"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textProfilePic"
+        android:layout_below="@+id/llSpinner"
+        android:layout_marginTop="35dp"
+        android:textSize="20sp"
+        android:text="Profile Picture"/>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:id="@+id/rlProfile"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/info_activity_user_profile"
+        android:layout_below="@+id/textProfilePic"
+        android:layout_height="150dp">
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/imageProfile"
+            android:background="@drawable/user_96"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="250dp"
+        android:id="@+id/btnContinue"
+        android:background="@color/ColorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+
+        android:layout_marginBottom="25dp"
+        android:text="Continue"/>
+</RelativeLayout>
+</RelativeLayout>

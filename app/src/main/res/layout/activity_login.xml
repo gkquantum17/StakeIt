@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.gokul.favr_v2.LoginActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1d1d1d"
+            android:id="@+id/loginUsername"
+            android:hint="Username"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:textColor="#1d1d1d"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginPassword"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Log In"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            custom:pb_colorComplete="#4caf50"
+            custom:pb_colorNormal="@color/ColorPrimary"
+            custom:pb_colorPressed="@color/ColorPrimaryDark"
+            custom:pb_colorProgress="@color/ColorAccent"
+            custom:pb_textComplete="Success!"
+            custom:pb_textProgress="Creating Account..."
+            custom:pb_textError="Error"
+            custom:pb_colorError="@color/red_error" />
+    </LinearLayout>
+
+</RelativeLayout>

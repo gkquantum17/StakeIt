@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gokul.favr_v2.PostSettingsActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="25dp"
+        android:id="@+id/textCategories"
+        android:layout_gravity="top|left"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/textCategories"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/llCategories"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:id="@+id/btnSports"
+            android:src="@drawable/sports_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:id="@+id/btnBusiness"
+            android:src="@drawable/business_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:id="@+id/btnUS"
+            android:src="@drawable/us_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="2.5dp"
+
+            android:id="@+id/btnWorld"
+            android:layout_height="65dp"
+            android:src="@drawable/world_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+
+            android:layout_weight="1"
+            android:id="@+id/btnPolitics"
+            android:layout_height="65dp"
+            android:src="@drawable/politics_w"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/llCategories"
+        android:layout_height="wrap_content"
+        android:id="@+id/llCategories2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btnScience"
+            android:layout_margin="2.5dp"
+            android:layout_height="65dp"
+            android:src="@drawable/science_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="2.5dp"
+
+            android:id="@+id/btnTechnology"
+            android:layout_height="65dp"
+            android:src="@drawable/tech_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+            android:id="@+id/btnAutomobiles"
+            android:layout_weight="1"
+            android:layout_height="65dp"
+            android:src="@drawable/cars_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnEconomy"
+            android:layout_height="65dp"
+            android:src="@drawable/economy_w"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_margin="2.5dp"
+            android:layout_weight="1"
+            android:id="@+id/btnEducation"
+            android:layout_height="65dp"
+            android:src="@drawable/education_w"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMER"
+        android:layout_below="@+id/llCategories2"
+        android:layout_margin="16dp"
+        android:textSize="25dp"
+        android:id="@+id/textTimer"
+        android:layout_gravity="top|left"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUp"
+            android:background="@null"
+            android:src="@drawable/up_50"/>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="17.5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:text="1"
+                android:layout_marginRight="25dp"
+                android:id="@+id/textTimerNum"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/textDaysDay"
+                android:text="day"
+                android:layout_toRightOf="@+id/textTimerNum"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/down_50"
+            android:background="@null"
+            android:id="@+id/btnDown"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
